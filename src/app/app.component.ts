@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { CustomRegex } from './customRegex';
+import { CustomRegex } from './shared/data/customRegex';
 
 @Component({
   selector: 'app-root',

@@ -1,6 +1,6 @@
 
 .header{
-    background-image: linear-gradient( rgba(45, 119, 109, 0.7) 0% , rgba(45, 119, 109, 0.7) 100%  ),url('./../assets/img-office.jpg');
+    background-image: linear-gradient( rgba(45, 119, 109, 0.7) 0% , rgba(45, 119, 109, 0.7) 100%  ),url('./../assets/images/img-office.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     height:100vh;
@@ -15,7 +15,7 @@
 }
 
 .formContent{
-    background-image: linear-gradient(to right,  rgba(45, 119, 109, 0.46) 0%, rgba(45, 119, 109, 0.46) 60%, #fff 60%), url('./../assets/img-office.jpg');
+    background-image: linear-gradient(to right,  rgba(45, 119, 109, 0.46) 0%, rgba(45, 119, 109, 0.46) 60%, #fff 60%), url('./../assets/images/img-office.jpg');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -24,7 +24,7 @@
 @media  all and (max-width:768px){
     .formContent{
         background-image: linear-gradient(to right,  rgba(45, 119, 109, 0.46) 0%, rgba(45, 119, 109, 0.46) 60%,
-         #fff 100%), url('./../assets/img-office.jpg');
+         #fff 100%), url('./../assets/images/img-office.jpg');
 
         background-size:cover;
         background-position: center;
