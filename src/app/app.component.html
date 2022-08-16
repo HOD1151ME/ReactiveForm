@@ -1,0 +1,65 @@
+
+<header class="header">
+ 
+</header>
+<div class="container form">
+  <div class="row">
+    <div class="col-10  offset-1">
+      <div class="formContent mt-5">
+        <div>
+          <div class="row">
+            <div class="col-lg-5 col-md-6 d-sm-none d-md-block">
+            </div>
+            <div class="col-lg-2 pr-0 d-none d-lg-block overflow-hidden">
+              <img  class="wave" src="./../assets/wave.svg" alt="">
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 text-center pl-0 bg-white">
+              <div class="p-4">
+                <h2>Welcome</h2>
+              <p class="text-secondary"> Log in to your account to continue </p>
+              <form  [formGroup]="userForm" class="icon" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text border">
+                          <i class="fas fa-user ml-3 text-secondary"></i>
+                        </div>
+                      </div>
+                      <input type="text" formControlName="email" noSpaceAllow name="email" id="email" placeholder="awesome@user.com" class="form-control border">
+                    </div>
+                    <div class="">
+                      <p *ngIf="getEmailControl.touched && getEmailControl.invalid" class="text-danger validators"> Enter correct Email</p>                  
+                    </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text border">
+                        <i class="fas fa-lock ml-3 text-secondary"></i>
+                      </div>
+                    </div>
+                    <input type="password" formControlName="password" noSpaceAllow name="password" id="password" placeholder="********" class="form-control border">
+                  </div>               
+                    <p *ngIf="getPasswordControl.touched && getPasswordControl.invalid" class="text-danger validators"> Enter correct password</p>
+                    <p *ngIf="getPasswordControl.dirty && getPasswordControl.getError('minlength') != null" class="text-danger validators"> Minimum length 8 characters</p>
+                    <p *ngIf="getPasswordControl.dirty && getPasswordControl.getError('maxlength') != null" class="text-danger validators"> Maximum length 16 characters</p>
+                  </div>
+                  <p class="text-right"><a class="text-primary" href="javascript:;">Forgot your password?</a></p>
+                  <button type="submit" class="btn btn-info px-5 border mb-2">Log In</button>
+                  <p class="text-secondary">Don't have an account? <a href="javascript:;">Sign Up</a></p>
+                  <div class="justify-content-center d-flex">
+                    <ul class="list-group list-group-horizontal border-0">
+                      <li class="list-group-item border-0"> <a href="javascript:;"><i class="fab fa-facebook-square text-secondary"></i></a></li>
+                      <li class="list-group-item border-0"> <a href="javascript:;"><i class="fab fa-twitter text-secondary"></i></a></li>
+                      <li class="list-group-item border-0"> <a href="javascript:;"><i class="fab fa-linkedin text-secondary"></i></a></li>
+                    </ul>
+                  </div>                 
+              </form>
+              </div>            
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

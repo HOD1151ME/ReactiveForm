@@ -1,0 +1,60 @@
+
+.header{
+    background-image: linear-gradient( rgba(45, 119, 109, 0.7) 0% , rgba(45, 119, 109, 0.7) 100%  ),url('./../assets/img-office.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    filter: blur(3px);
+    backdrop-filter: grayscale(30%)
+}
+.form{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.formContent{
+    background-image: linear-gradient(to right,  rgba(45, 119, 109, 0.46) 0%, rgba(45, 119, 109, 0.46) 60%, #fff 60%), url('./../assets/img-office.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    box-shadow: 0 2px 2px 4px rgba(0,0,0,.3)  
+}
+@media  all and (max-width:768px){
+    .formContent{
+        background-image: linear-gradient(to right,  rgba(45, 119, 109, 0.46) 0%, rgba(45, 119, 109, 0.46) 60%,
+         #fff 100%), url('./../assets/img-office.jpg');
+
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+        box-shadow: 0 2px 2px 4px rgba(0,0,0,.3)  
+    }
+}
+.wave{
+    transform: translateY(-310%) scale(6) translateX(-12%) rotate(-96deg);
+    transform-origin: right;
+}
+
+.border{
+    border-radius:50px;
+}
+.form-group{
+    position:relative;
+    & .validators{
+        min-width:200px;
+        background-color:#fff;
+        position:absolute;
+        left:102%;
+        top:50%;
+        transform:translateY(-50%);
+        box-shadow:0 2px 2px 2px rgba(0,0,0,0.1);
+        border-radius:5px;
+        border:2px solid #fff;
+        line-height: 1.5;
+    }
+}
+input.ng-invalid.ng-touched{
+    box-shadow: 0 0 2px 2px orangered;
+}
